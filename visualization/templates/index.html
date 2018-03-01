@@ -1,0 +1,41 @@
+{% load static %}
+{% load table_tags %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Não corte meu Busão</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+    <meta property="og:image" content="http://s3.amazonaws.com/rnsp32xsp/wp-content/uploads/2018/01/03140029/Editada-01.jpg" />
+    <meta property="og:site_name" content="#NãoCorteMeuBusão" />
+    <meta property="og:title" content="#NãoCorteMeuBusão - Veja se seu ônibus será cortado" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:description"
+    content="#NãoCorteMeuBusão - Veja se seu ônibus será cortado" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114959483-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-114959483-1');
+    </script>
+
+  </head>
+  <body>
+    <div class="container">
+      <center>
+        <h1>#NãoCorteMeuBusão</h1>
+        <h3>Ônibus é um dos meios de transporte mais utilizados em São Paulo e a nossa atual gestão quer cortar várias linhas de nossa cidade</h3>
+        <h2>Cheque agora se sua linha será cortada</h2>
+        <a href="{% static 'busos_cortados.csv'%}" download="linhas_cortadas.csv"><button type="button" name="button">Baixe os dados</button></a>
+        <hr>
+      </center>
+    {% render_table table %}
+    </div>
+  </body>
+</html>

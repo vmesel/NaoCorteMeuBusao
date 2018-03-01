@@ -1,0 +1,11 @@
+{
+  "name": "meubusao",
+  "version": "1.0.0",
+  "description": "This example is so cool.",
+  "main": "web.js",
+  "author": "vmesel",
+  "license": "MIT",
+  "engines": {
+    "python": "3.6.4"
+  },
+}

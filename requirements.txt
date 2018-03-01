@@ -1,0 +1,14 @@
+dj-database-url==0.4.2
+Django==2.0.2
+django-datatable==0.3.1
+gunicorn==19.7.1
+numpy==1.14.1
+pandas==0.22.0
+psycopg2==2.7.4
+python-dateutil==2.6.1
+python-decouple==3.1
+pytz==2018.3
+six==1.11.0
+tqdm==4.19.6
+whitenoise==3.3.1
+xlrd==1.1.0
